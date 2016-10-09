@@ -4,21 +4,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Rithu Chandrasekar Personal Website</title>
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" type="text/css" href="main.css" />
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <script src="main.js"></script>
 	</head>
 	<body>
-		<div class="container">
+    <nav class="navbar navbar-custom navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#home">RC</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#home">Home</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="Rithu Resume.pdf">Resumé</a></li>
+            <li><a href="#">Other Interests</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+		<div class="app">
+      <div id="home" class="home container target">
     		<div class="middle row">
           <div class="col-md-8 col-md-offset-2 intro">
             <h1>RITHU CHANDRASEKAR</h1>
-            <p class="blurb">Hi! I'm a Computer Science student going into 4th year at the University of Waterloo.<br>
+            <p class="blurb">Hi! I'm a Computer Science student going into 4th year
+              at the University of Waterloo.<br>
               I've done 2 internships so far and I'm currently doing my 3rd. <br>
               I'm looking for another challenging Internship for Summer 2017.<br>
-              Shoot me an email, let's chat!</p>
+              Shoot me an email, let's chat!
+            </p>
+            <div class="btn-toolbar" role="toolbar">
+              <a class="btn-group" role="group" href="https://github.com/rithuc">
+                <img class="github" src="GitHub-Mark-Light-32px.png"></img>
+              </a>
+              <a class="btn-group" role="group" href="https://www.linkedin.com/in/rithuc">
+                <img class="linkedin" src="In-White-34px-R.png"></img>
+              </a>
+              <a class="btn-group" role="group" href="mailto:crithu@gmail.com">
+                <span class="glyphicon glyphicon-envelope email"></span>
+              </a>
+            </div>
     		  </div>
         </div>
+      </div>
+      <div id="experience" class="experience target">
+        <h1>EXPERIENCE</h1>
+        <div class="media">
+          <div class="media-left">
+            <a href="http://www.capco.com/">
+              <img class="media-object" src="capco.png" alt="pointsandme">
+            </a>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading capco">Technology/Consulting Intern</h4><br>
+            September 2016 – Present<br><br>
+            •	Using JavaScript with Angular, HTML, and CSS to develop features for a
+            banking web app<br>
+            •	Working in an Agile development environment
+          </div>
+        </div>
+        <div class="media">
+          <div class="media-left">
+            <a href="http://devpost.com/software/pointsandme">
+              <img class="media-object" src="pointsandme.png" alt="pointsandme">
+            </a>
+          </div>
+          <div class="media-body">
+            <a href="http://devpost.com/software/pointsandme">
+            <h4 class="media-heading htn">Hack the North 2016: Points and Me</h4></a><br>
+            Did your teachers in grade school ever reward you for doing well in class
+            with stars and/or stickers? That's the idea behind Points and Me.<br> <br>
+            Points and Me allows teachers to register a class. For each class, they can setup
+            achievements and tasks for the students to accomplish, how much each achievement/task
+             is worth in points, redeemable rewards, and how much rewards are worth. Students can
+              login and track the achievements and tasks they have accomplished, how many points
+              they have to spend, and purchase the rewards using their points. Once a student has
+               made a purchase, the teacher is alerted.
+          </div>
+        </div>
+        <div class="media">
+          <div class="media-left">
+            <a href="https://github.com/RithuC/Daily-Activity-Tracker">
+              <img class="media-object" src="utrack.png" alt="pointsandme">
+            </a>
+          </div>
+          <div class="media-body">
+            <a href="https://github.com/RithuC/Daily-Activity-Tracker">
+            <h4 class="media-heading utrack">UTrack: Assignment for UI course</h4></a><br>
+            This was my first project in JavaScript. <br><br>
+            It's a simple activity tracker where you can add data points. Then you can view
+            the data points in a table or graph format. Creating the graph without the use of
+            any external libraries was probably the hardest part of this assignment.
+          </div>
+        </div>
+      </div>
 		</div>
 	</body>
 </html>
