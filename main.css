@@ -12,6 +12,9 @@ h1 {
   color: white;
   text-align: center;
 }
+a {
+  text-decoration: none;
+}
 .home {
   display: table;
   width: 100%;
@@ -34,8 +37,6 @@ h1 {
 .intro {
   padding-right: 20px;
   vertical-align: middle;
-}
-.experience {
 }
 .navbar-custom {
   background-color: rgba(0, 0, 0, 0.5);
@@ -66,14 +67,42 @@ h1 {
   font-size: 32px;
   padding: 25px;
   color: white;
+  padding-bottom: 5px;
+}
+.emailCaption {
+  color: white;
+  visibility: hidden;;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  /*transition: visibility opacity 0.2s;*/
 }
 .linkedin {
   font-size: 32px;
   padding: 25px;
+  padding-bottom: 10px;
 }
+.linkedinCaption {
+  color: white;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+/*transition: visibility opacity 0.2s;*/}
 .github {
   padding: 25px;
+  padding-bottom: 10px;
 }
+.githubCaption {
+  color: white;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+/*transition: visibility opacity 0.2s;*/}
 .btn-toolbar {
   padding-top: 20px;
   display: inline-block;
@@ -82,13 +111,25 @@ h1 {
   transition: 0.9s;
   transform: rotateY(360deg);
 }
+.btn-group:hover .githubCaption{
+  visibility: visible;
+  opacity: 1;
+}
 .btn-toolbar:hover .linkedin:hover {
   transition: 0.9s;
   transform: rotateY(360deg);
 }
+.btn-group:hover .linkedinCaption{
+  visibility: visible;
+  opacity: 1;
+}
 .btn-toolbar:hover .email:hover {
   transition: 0.9s;
   transform: rotateY(360deg);
+}
+.btn-group:hover .emailCaption {
+  visibility: visible;
+  opacity: 1;
 }
 .media-object {
   padding-left: 40px;
@@ -103,4 +144,100 @@ h1 {
 }
 .utrack {
   color: #8578c5;
+}
+.capco {
+  color: #dc426d;
+}
+.moreInfo {
+  text-align: center;
+}
+.resume {
+  background: url('20150829_130013.JPG') no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  width: 100%;
+  height: 300px;
+}
+#expTitle {
+  padding-top: 50px;
+}
+#resTitle {
+  padding-top: 55px;
+}
+.resBlurb {
+  text-align: center;
+  color: #42DCA3;
+  vertical-align: middle;
+}
+.glyphicon-file {
+  font-size: 45px;
+  color: white;
+  vertical-align: middle;
+}
+.glyphicon-file:hover {
+  transition: 0.9s;
+  transform: rotateY(360deg);
+  color: #42DCA3;
+}
+.glyphicon-file:hover .resBlurb {
+  color: white;
+}
+.resBlurb:hover {
+  color: white;
+}
+.resBlurb:hover .glyphicon-file {
+  color: #42DCA3;
+  transition: 0.9s;
+  transform: rotateY(360deg);
+}
+.linkedinContact {
+  font-size: 30px;
+  padding: 0px;
+}
+.emailContact {
+  font-size: 30px;
+  padding: 0px;
+  text-align: center;
+  vertical-align: middle;
+}
+.btn {
+  background: black;
+  border: 2px solid #b4dc42;
+  text-align: center;
+  width: 170px;
+  height: 70px;
+  border-radius: 0px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  font-weight: 400;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  vertical-align: middle;
+  padding: 15px;
+}
+.btn:hover {
+  background: #b4dc42;
+  color: white;
+  border: 0px;
+}
+.network-name {
+  color: white;
+  vertical-align: middle;
+}
+.contact {
+  height: 400px;
+}
+.msg {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.emailli {
+  padding-bottom: 40px;
+  padding-right: 25px !important;
+}
+.linkedinli {
+  padding-bottom: 40px;
+  padding-left: 25px !important;
 }

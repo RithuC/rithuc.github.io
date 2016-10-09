@@ -19,6 +19,14 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <script src="main.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-85467809-1', 'auto');
+      ga('send', 'pageview');
+      </script>
 	</head>
 	<body>
     <nav class="navbar navbar-custom navbar-fixed-top">
@@ -30,18 +38,18 @@
           <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="#home">Home</a></li>
             <li><a href="#experience">Experience</a></li>
-            <li><a href="Rithu Resume.pdf">Resumé</a></li>
-            <li><a href="#">Other Interests</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#resume">Resumé</a></li>
+            <!--<li><a href="#otherInterests">Other Interests</a></li>-->
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </div>
     </nav>
 		<div class="app">
-      <div id="home" class="home container target">
+      <section id="home" class="home container target">
     		<div class="middle row">
           <div class="col-md-8 col-md-offset-2 intro">
-            <h1>RITHU CHANDRASEKAR</h1>
+            <h1 class="name">RITHU CHANDRASEKAR</h1>
             <p class="blurb">Hi! I'm a Computer Science student going into 4th year
               at the University of Waterloo.<br>
               I've done 2 internships so far and I'm currently doing my 3rd. <br>
@@ -51,19 +59,24 @@
             <div class="btn-toolbar" role="toolbar">
               <a class="btn-group" role="group" href="https://github.com/rithuc">
                 <img class="github" src="GitHub-Mark-Light-32px.png"></img>
+                <div class="githubCaption">Github</div>
               </a>
               <a class="btn-group" role="group" href="https://www.linkedin.com/in/rithuc">
                 <img class="linkedin" src="In-White-34px-R.png"></img>
+                <div class="linkedinCaption">LinkedIn</div>
               </a>
               <a class="btn-group" role="group" href="mailto:crithu@gmail.com">
                 <span class="glyphicon glyphicon-envelope email"></span>
+                <div class="emailCaption">Email</div>
               </a>
             </div>
     		  </div>
         </div>
-      </div>
-      <div id="experience" class="experience target">
-        <h1>EXPERIENCE</h1>
+      </section>
+      <section id="experience" class="experience target">
+        <h1 id="expTitle">EXPERIENCE</h1>
+        <h4 class="moreInfo">These are just some of my internships and projects
+          I chose to feature. Please see my Resumé for more.</h4>
         <div class="media">
           <div class="media-left">
             <a href="http://www.capco.com/">
@@ -71,7 +84,8 @@
             </a>
           </div>
           <div class="media-body">
-            <h4 class="media-heading capco">Technology/Consulting Intern</h4><br>
+            <a href="http://www.capco.com/">
+            <h4 class="media-heading capco">Technology/Consulting Intern</h4></a><br>
             September 2016 – Present<br><br>
             •	Using JavaScript with Angular, HTML, and CSS to develop features for a
             banking web app<br>
@@ -112,7 +126,39 @@
             any external libraries was probably the hardest part of this assignment.
           </div>
         </div>
-      </div>
+      </section>
+      <section id="resume" class="resume">
+        <h1 id="resTitle">RESUMÉ</h1>
+        <a href="Rithu Resume.pdf"><h4 class="resBlurb media-middle"><br>
+          I've got this thing with some things on it...Check it out:
+        <span class="glyphicon glyphicon-file"></span></h4></a>
+      </section>
+      <!--<div id="otherInterests" class="otherInterests">
+        <h4>I enjoy kayaking, reading, travelling, and watching TV shows.<br>
+          Fun fact: all the background images used for this website were taken during my kayak trips.<br>
+          As for books, I enjoy dystopian novels...Big Brother is Watching You (1984 is a personal favourite)<br>
+          I watch many shows but some of my favourites are Mr. Robot, Lost, and Game of Thrones.</h4>
+      </div>-->
+      <section id="contact" class="container content-section text-center">
+          <div class="row">
+              <div class="col-lg-8 col-lg-offset-2">
+                  <h1>CONTACT</h1>
+                  <p class="msg">Shoot me a message!</p>
+                  <ul class="list-inline banner-social-buttons">
+                      <li class="emailli">
+                          <a href="mailto:crithu@gmail.com" class="btn btn-default">
+                            <span class="glyphicon glyphicon-envelope emailContact"></span>
+                            <span class="network-name">EMAIL</span></a>
+                      </li>
+                      <li class="linkedinli">
+                          <a href="https://www.linkedin.com/in/rithuc" class="btn btn-default">
+                            <img class="linkedinContact" src="In-White-34px-R.png"></img>
+                            <span class="network-name">LINKEDIN</span></a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </section>
 		</div>
 	</body>
 </html>
