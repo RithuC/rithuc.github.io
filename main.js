@@ -1,4 +1,4 @@
-var sections = $('target')
+/*var sections = $('target')
   , nav = $('nav')
   , nav_height = nav.outerHeight();
 
@@ -17,4 +17,4 @@ $(window).on('scroll', function () {
       nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
     }
   });
-});
+});*/
