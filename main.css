@@ -84,6 +84,21 @@ a {
   transition: all 0.3s ease-in-out;
   /*transition: visibility opacity 0.2s;*/
 }
+.glyphicon-file .file {
+  font-size: 32px;
+  padding: 25px;
+  color: white;
+  padding-bottom: 10px;
+}
+.fileCaption {
+  color: white;
+  visibility: hidden;;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  /*transition: visibility opacity 0.2s;*/
+}
 .linkedin {
   font-size: 32px;
   padding: 25px;
@@ -121,6 +136,15 @@ a {
   visibility: visible;
   opacity: 1;
 }
+.btn-toolbar:hover .file:hover {
+  transition: 0.9s;
+  transform: rotateY(360deg);
+}
+.btn-group:hover .fileCaption{
+  visibility: visible;
+  opacity: 1;
+}
+
 .btn-toolbar:hover .linkedin:hover {
   transition: 0.9s;
   transform: rotateY(360deg);
@@ -193,23 +217,23 @@ a {
   color: #42DCA3;
   vertical-align: middle;
 }
-.glyphicon-file {
+.fileicon{
   font-size: 45px;
   color: white;
   vertical-align: middle;
 }
-.glyphicon-file:hover {
+.fileicon:hover {
   transition: 0.9s;
   transform: rotateY(360deg);
   color: #42DCA3;
 }
-.glyphicon-file:hover .resBlurb {
+.fileicon:hover .resBlurb {
   color: white;
 }
 .resBlurb:hover {
   color: white;
 }
-.resBlurb:hover .glyphicon-file {
+.resBlurb:hover .fileicon {
   color: #42DCA3;
   transition: 0.9s;
   transform: rotateY(360deg);
@@ -267,9 +291,11 @@ a {
 @media screen and (max-width: 430px) {
   .emailli{
     padding-right: 0px !important;
+    padding-left: 0px !important;
   }
   .linkedinli {
     padding-left: 0px !important;
+    padding-right: 0px !important;
   }
 }
 .navCheat {
