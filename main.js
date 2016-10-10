@@ -1,20 +1,28 @@
-/*var sections = $('target')
-  , nav = $('nav')
-  , nav_height = nav.outerHeight();
-
-$(window).on('scroll', function () {
-  var cur_pos = $(this).scrollTop();
-
-  sections.each(function() {
-    var top = $(this).offset().top - nav_height,
-        bottom = top + $(this).outerHeight();
-
-    if (cur_pos >= top && cur_pos <= bottom) {
-      nav.find('a').removeClass('active');
-      sections.removeClass('active');
-
-      $(this).addClass('active');
-      nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
+function collapseNavbar() {
+    if ($(".navbar").offset().top > 30) {
+        $(".navbar-fixed-top").addClass("top-nav-collapse");
+    } else {
+        $(".navbar-fixed-top").removeClass("top-nav-collapse");
     }
-  });
+}
+
+$(window).scroll(collapseNavbar);
+$(document).ready(collapseNavbar);
+
+// jQuery for page scrolling feature - requires jQuery Easing plugin
+/*$(function() {
+    $('a.page-scroll').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
+    });
 });*/
+
+// Closes the Responsive Menu on Menu Item Click
+$('.navbar-collapse > ul > li > a').click(function() {
+    $(this).closest('.collapse').collapse('toggle');
+    console.log('in toggle');
+    console.log($(this).closest('.collapse'));
+});
