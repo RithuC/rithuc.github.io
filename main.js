@@ -1,5 +1,5 @@
 function collapseNavbar() {
-    if ($(".navbar").offset().top > 30) {
+    if ($(".navbar").offset().top > 50) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
@@ -10,7 +10,7 @@ $(window).scroll(collapseNavbar);
 $(document).ready(collapseNavbar);
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
-/*$(function() {
+$(function() {
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
@@ -18,11 +18,11 @@ $(document).ready(collapseNavbar);
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
-});*/
+});
 
 // Closes the Responsive Menu on Menu Item Click
-$('.navbar-collapse > ul > li > a').click(function() {
-    $(this).closest('.collapse').collapse('toggle');
+$('#page-scroll').click(function() {
+    //$(this).closest('.collapse').collapse('toggle');
     console.log('in toggle');
     console.log($(this).closest('.collapse'));
 });

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Rithu Chandrasekar Personal Website</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -32,18 +33,17 @@
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
       <div class="container-fluid">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-              Menu <i class="fa fa-bars"></i>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main">
+              Menu <span class="glyphicon glyphicon-menu-hamburger"></span>
           </button>
           <a class="navbar-brand" href="#home">RC</a>
         </div>
-        <div class="collapse navbar-collapse navbar-main-collapse" >
+        <div id="main" class="collapse navbar-collapse" data-toggle="collapse" data-target="#main">
           <ul class="nav navbar-nav navbar-right">
             <li class="hidden"><a href="#page-top"></a></li>
             <li><a class="page-scroll" href="#home">Home</a></li>
             <li><a class="page-scroll" href="#experience">Experience</a></li>
             <li><a class="page-scroll" href="#resume">Resumé</a></li>
-            <!--<li><a href="#otherInterests">Other Interests</a></li>-->
             <li><a class="page-scroll" href="#contact">Contact</a></li>
           </ul>
         </div>
@@ -131,23 +131,20 @@
           </div>
         </div>
       </section>
-      <section id="resume" class="resume">
+      <section id="resume">
+        <div class="navCheat"></div>
+        <div class="resume">
         <h1 id="resTitle">RESUMÉ</h1>
         <a href="Rithu Resume.pdf"><h4 class="resBlurb media-middle"><br>
-          I've got this thing with some things on it...Check it out:
+          I've got this thing with some things on it. Check it out:
         <span class="glyphicon glyphicon-file"></span></h4></a>
+      </div>
       </section>
-      <!--<div id="otherInterests" class="otherInterests">
-        <h4>I enjoy kayaking, reading, travelling, and watching TV shows.<br>
-          Fun fact: all the background images used for this website were taken during my kayak trips.<br>
-          As for books, I enjoy dystopian novels...Big Brother is Watching You (1984 is a personal favourite)<br>
-          I watch many shows but some of my favourites are Mr. Robot, Lost, and Game of Thrones.</h4>
-      </div>-->
       <section id="contact" class="container content-section text-center">
           <div class="row">
               <div class="col-lg-8 col-lg-offset-2">
                   <h1>CONTACT</h1>
-                  <p class="msg">Shoot me a message!</p>
+                  <p class="msg">Say Hello!</p>
                   <ul class="list-inline banner-social-buttons">
                       <li class="emailli">
                           <a href="mailto:crithu@gmail.com" class="btn btn-default">
